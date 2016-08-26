@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Количество всех вопросов-->
+    <integer name="questNum">4</integer>
+
+    <!-- ЗАГОТОВКА
+
+
+    <string name="qu">
+
+    </string>
+
+
+    -->
+    <string-array name="qu1">
+       <item>Какой из этих небоскребов выше?</item>
+       <item>q1</item>
+       <item>q2</item>
+       <item>Эмпайр Стэйт Билдинг</item>
+       <item>Бурдж-Халифа</item>
+       <item>2</item>
+    </string-array>
+
+    <string-array name="qu2">
+       <item>Какое из этих растений папоротник?</item>
+        <item>q7</item>
+        <item>q8</item>
+        <item>Эмпайр Стэйт Билдинг</item>
+        <item>Бурдж-Халифа</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="qu3">
+        <item>Какой из этих автомобилей BMW?</item>
+        <item>q5</item>
+        <item>q6</item>
+        <item>Эмпайр Стэйт Билдинг</item>
+        <item>Бурдж-Халифа</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="qu4">
+        <item>Где изображён аэроплан? и много ещё чего это я пишу для теста этих много чего мне покс где тут аэроплан</item>
+        <item>q3</item>
+        <item>q4</item>
+        <item>Эмпайр Стэйт Билдинг</item>
+        <item>Бурдж-Халифа</item>
+        <item>2</item>
+    </string-array>
+
+
+
+</resources>

@@ -1,0 +1,335 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.no.starting.PlayActivity"
+    android:background="#336699"
+    android:id="@+id/kdj">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:minHeight="50dp"
+        android:id="@+id/mainLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/mainLayout"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@drawable/bcg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="1">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_marginLeft="3dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imageView"
+                        android:src="@drawable/zbeginner"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imageView2"
+                        android:src="@drawable/medalbronse"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imageView3"
+                        android:src="@drawable/medalsilver"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/imageView4"
+                        android:src="@drawable/medalgold"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:weightSum="3"
+                    android:layout_weight="0.2"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Пройдено 0 %"
+                        android:id="@+id/textProgress"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="11dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imageView5"
+                        android:src="@drawable/zking"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imageView6"
+                        android:src="@drawable/goldcup"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imageView7"
+                        android:src="@drawable/silvercup"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/imageView8"
+                        android:src="@drawable/bronzecup"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--****************************************************************-->
+            <!--********************************************************************-->
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_gravity="center_horizontal"
+                android:color = "#003399"
+                android:indeterminate="false"
+                android:layout_marginTop="-2dp" />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Верно подряд:0"
+                    android:id="@+id/textInARow"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Рекорд подряд: 0"
+                    android:id="@+id/textInARowRecord"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:layout_marginRight="10dp" />
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:background="@drawable/line"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Задание: Ответьте правильно на первый вопрос"
+                android:id="@+id/textView6"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:background="@drawable/bcg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:weightSum="1"
+            android:id="@+id/bbccgg">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Вопрос №1"
+                    android:id="@+id/currQuestionNum"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:background="@drawable/line"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gratz"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="2dp"
+                    android:id="@+id/iSelectLeft"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageViewLeft"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitStart"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="2dp"
+                    android:id="@+id/iSelectRight">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imageViewRight"
+                        android:scaleType="fitStart"
+                        android:adjustViewBounds="true"
+                        android:focusableInTouchMode="true"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:transitionGroup="false"
+                android:showDividers="middle">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Папоротник"
+                    android:id="@+id/descrLeft"
+                    android:textSize="11dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#ffffffff"
+                    android:background="#003399"
+                    android:layout_weight="1"
+                    android:width="1dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Что-то совсем другое"
+                    android:id="@+id/descrRight"
+                    android:textSize="11dp"
+                    android:gravity="center_horizontal"
+                    android:layout_marginLeft="1dp"
+                    android:singleLine="false"
+                    android:background="#003399"
+                    android:textColor="#ffffffff"
+                    android:layout_weight="1"
+                    android:width="1dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="0.25"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="@drawable/bcg"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="3dp"
+
+            android:focusableInTouchMode="false">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/questView"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+

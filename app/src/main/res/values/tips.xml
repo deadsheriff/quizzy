@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--       Список советов
+    В переменной tipCount - количество советов -->
+
+    <integer name="tipCount">5</integer>
+
+    <string name="tip1">Если вам понравилась игра - оцение её в Google Play</string>
+    <string name="tip2">Если вам понравилась игра - оцение её в Google Play</string>
+    <string name="tip3">Если вам понравилась игра - оцение её в Google Play</string>
+    <string name="tip4">Если вам понравилась игра - оцение её в Google Play</string>
+    <string name="tip5">Если вам понравилась игра - оцение её в Google Play</string>
+
+</resources>

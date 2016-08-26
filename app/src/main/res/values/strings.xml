@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="greetings">Поздравляем</string>
+
+
+    <string name="app_name">Starting</string>
+    <string name="hello_world">На какой фильм похожа игра CRYSIS?</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_play">PlayActivity</string>
+
+    <string name="task0">Задание: Ответьте верно на один вопрос</string>
+    <string name="task1">Задание: Ответьте верно на 10 вопросов</string>
+    <string name="task2">Задание: Ответьте верно на 100 вопросов</string>
+    <string name="task3">Задание: Ответьте верно на 500 вопросов</string>
+    <string name="task4">Задание: Пройдите Угадайку до конца</string>
+
+</resources>
+
