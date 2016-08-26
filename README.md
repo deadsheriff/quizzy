@@ -1,5 +1,5 @@
 # quizzy
-![alt tag](https://raw.githubusercontent.com/deadsheriff/quizzy/master/1.jpg)
+![alt tag](quizzy/1.JPG)<br>
 Угадайка выводящая две картинки с вопросом. <br>
 Ответ заключается в выборе одной из картинок.
 Код слишком примитивен, потому что эта первая попытка java+android. К тому же *Стартап* не дошел до стадии рефакторинга.
